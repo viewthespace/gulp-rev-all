@@ -34,7 +34,7 @@ var Revisioner = (function() {
     this.hashCombined = "";
 
     // Stores the before : after path of assets, used to create the manifset file
-    this.manifest = {};
+    this.manifest = this.options.manifestFile || {};
 
     // Enable / Disable logger based on supplied options
     this.log = this.options.debug ? fancyLog : function() {};
